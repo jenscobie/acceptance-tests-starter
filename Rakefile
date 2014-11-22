@@ -1,6 +1,5 @@
 require 'cucumber/rake/task'
 
-Cucumber::Rake::Task.new(:functional) do |t|
-  t.cucumber_opts = "--strict --format pretty --format html --out reports/functional.html"
-  `open reports/functional.html`
+Cucumber::Rake::Task.new(:acceptance) do |t|
+  t.cucumber_opts = "--strict --format pretty --format html --out reports/acceptance.html"
 end
